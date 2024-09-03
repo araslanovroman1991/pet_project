@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "db-crud"
+version = "0.1.0"
+description = ""
+authors = ["root <araslanovroman1991@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+alembic = "^1.13.2"
+pydantic = "^2.8.2"
+pydantic-settings = "^2.3.4"
+asyncpg = "^0.29.0"
+sqlalchemy = "^2.0.31"
+fastapi = "^0.111.0"
+aiohttp = "^3.9.5"
+pymongo = "^4.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

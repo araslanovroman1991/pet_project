@@ -1,0 +1,8 @@
+alembic -c alembic/check_list/alembic.ini revision --autogenerate -m "init_generate"
+alembic -c alembic/check_list/alembic.ini upgrade head
+alembic -c alembic/check_list/alembic.ini downgrade -1
+
+sudo docker run -d -p 9014:9014 --restart always --name db_crud db_crud/db_crud:latest
+sudo docker build --tag db_crud/db_crud:latest .
+sudo docker system prune -a
+
